@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Used Car Price Prediction</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="app.css">
+	<script src="app.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>-->
+
+</head>
+
+<body>
+	<div class="img"></div>
+	<form class="form">
+		<center>
+			<h1>Used Car Prediction</h1>
+			<hr>
+			<a href="https://github.com/antoneev/usedcars" target="_blank"><i class="fa fa-github"
+					aria-hidden="true"></i></a>
+			<a href="" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+			<div>
+				<h3>Choose Manufacturer</h3>
+				<select class="dropdown" name="" id="uiManufacturer">
+					<option value="" disabled="disabled" selected="selected">Choose Manufacturer</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose Model</h3>
+				<select class="dropdown" name="" id="uiModel">
+					<option value="" disabled="disabled" selected="selected">Choose Model</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose Transmission</h3>
+				<select class="dropdown" name="" id="uiTransmission">
+					<option value="" disabled="disabled" selected="selected">Choose Transmission</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose Color</h3>
+				<select class="dropdown" name="" id="uiColor">
+					<option value="" disabled="disabled" selected="selected">Choose Color</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose Engine Fuel</h3>
+				<select class="dropdown" name="" id="uiEngineFuel">
+					<option value="" disabled="disabled" selected="selected">Choose Engine Fuel</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose Engine Type</h3>
+				<select class="dropdown" name="" id="uiEngineType">
+					<option value="" disabled="disabled" selected="selected">Choose Engine Type</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose Body</h3>
+				<select class="dropdown" name="" id="uiBody">
+					<option value="" disabled="disabled" selected="selected">Choose Body</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose State</h3>
+				<select class="dropdown" name="" id="uiState">
+					<option value="" disabled="disabled" selected="selected">Choose State</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Choose Drive Train</h3>
+				<select class="dropdown" name="" id="uiDriveTrain">
+					<option value="" disabled="disabled" selected="selected">Choose Drive Train</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Engine Has Gas</h3>
+				<select class="dropdown" name="" id="uiEngineHasGas">
+					<option value="" disabled="disabled" selected="selected">Engine Has Gas</option>
+					<option value="0">False</option>
+					<option value="1">True</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Has Warranty</h3>
+				<select class="dropdown" name="" id="uiHasWarranty">
+					<option value="" disabled="disabled" selected="selected">Has Warranty</option>
+					<option value="0">False</option>
+					<option value="1">True</option>
+				</select>
+			</div>
+
+			<div>
+				<h3>Is Exchangeable</h3>
+				<select class="dropdown" name="" id="uiIsExchangeable">
+					<option value="" disabled="disabled" selected="selected">Is Exchangeable</option>
+					<option value="0">False</option>
+					<option value="1">True</option>
+				</select>
+			</div>
+
+			<h3>Enter Odometer Value</h3>
+			<input class="textbox" type="number" id="uiOdometerValue" class="floatLabel" value="10" min=0 required>
+			<h3>Enter Year Produced</h3>
+			<input class="textbox" type="number" id="uiYearProduced" class="floatLabel" value="10" min=0 required>
+			<h3>Enter Engine Capacity</h3>
+			<input class="textbox" type="number" id="uiEngineCapacity" class="floatLabel" value="10" min=0 required>
+			<h3>Enter Number of Photos</h3>
+			<input class="textbox" type="number" id="uiNumberOfPhotos" class="floatLabel" value="10" min=0 required>
+			<h3>Enter Up Counter</h3>
+			<input class="textbox" type="number" id="uiUpCounter" class="floatLabel" value="10" min=0 required>
+			<h3>Enter Duration Listed</h3>
+			<input class="textbox" type="number" id="uiDurationListed" class="floatLabel" value="10" min=0 required>
+
+
+			<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+			<div id="uiEstimatedPrice" class="result">
+				<h2></h2>
+		</center>
+		</div>
+</body>
+
+</html>
