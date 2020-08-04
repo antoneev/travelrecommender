@@ -9,4 +9,5 @@ This project was built by **Antone Evans Jr.,  Abilash Vanam, and Srikar Reddy M
 3. Juypter Notebook -
 
 ![Image of Used Car](https://github.com/antoneev/usedcars/blob/model-client-server/index.png?raw=true)
-
+![Image of Used Car](https://github.com/antoneev/usedcars/blob/model-client-server/app.png?raw=true)
+![Image of Used Car](https://github.com/antoneev/usedcars/blob/model-client-server/app1.png?raw=true)
