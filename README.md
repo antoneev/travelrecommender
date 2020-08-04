@@ -8,5 +8,5 @@ This project was built by **Antone Evans Jr.,  Abilash Vanam, and Srikar Reddy M
 2. Medium Post - 
 3. Juypter Notebook -
 
-![Image of Used Car](https://cdn.motor1.com/images/mgl/2MMlg/s1/do-you-agree-with-this-list-of-the-best-affordable-used-cars.jpg)
+![Image of Used Car](https://github.com/antoneev/usedcars/blob/model-client-server/index.png?raw=true)
 
