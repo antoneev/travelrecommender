@@ -12,7 +12,7 @@ This project was built by **Antone Evans Jr.,  Abilash Vanam, and Srikar Reddy M
  5. Creating the client using HTML, CSS and JS
  6. Deploying the application to AWS EC2
 
-- Link - http://ec2-52-14-154-106.us-east-2.compute.amazonaws.com/app.html
+- Link - http://ec2-52-14-154-106.us-east-2.compute.amazonaws.com/
 - Medium Post - https://medium.com/@antoneev65/end-to-end-machine-learning-project-on-used-car-prediction-7719c8f48e9
 
 ![Image of Used Car](https://github.com/antoneev/usedcars/blob/model-client-server/index.png?raw=true)
