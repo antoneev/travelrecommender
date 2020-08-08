@@ -128,5 +128,6 @@ def predict_used_car():
 
 
 if __name__ == "__main__":
+    util.load_saved_artifacts()
     print("Starting Python Flask Server For Used Cars Prediction ...")
     app.run()

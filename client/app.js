@@ -38,7 +38,8 @@ function onClickedEstimatePrice() {
   var durationListed = document.getElementById("uiDurationListed");
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-   var url = "http://127.0.0.1:5000/predict_used_car"; 
+   //var url = "http://127.0.0.1:5000/predict_used_car"; URL used on local testing
+   var url = "/api/predict_used_car";
 
   $.post(url, {
     manufacturers: manufacturer.value,
@@ -68,7 +69,8 @@ function onClickedEstimatePrice() {
 
 function onPageLoad() {
   console.log( "document loaded" );
-   var url = "http://127.0.0.1:5000/get_manufacturers_name"; 
+  // var url = "http://127.0.0.1:5000/get_manufacturers_name";
+   var url = "/api/get_manufacturers_name";
   $.get(url,function(data, status) {
       console.log("got response for get_manufacturers_name request");
       if(data) {
@@ -81,7 +83,8 @@ function onPageLoad() {
           }
       }
   })
-  var url = "http://127.0.0.1:5000/get_models_name"; 
+  //var url = "http://127.0.0.1:5000/get_models_name"; 
+  var url = "/api/get_models_name";
   $.get(url,function(data, status) {
     console.log("got response for get_models_name request");
     if(data) {
@@ -94,7 +97,8 @@ function onPageLoad() {
         }
     }
 })
-var url = "http://127.0.0.1:5000/get_transmission_name"; 
+//var url = "http://127.0.0.1:5000/get_transmission_name"; 
+var url = "/api/get_transmission_name";
 $.get(url,function(data, status) {
   console.log("got response for get_transmission_name request");
   if(data) {
@@ -107,7 +111,8 @@ $.get(url,function(data, status) {
       }
   }
 })
-var url = "http://127.0.0.1:5000/get_color_name"; 
+//var url = "http://127.0.0.1:5000/get_color_name"; 
+var url = "/api/get_color_name";
 $.get(url,function(data, status) {
   console.log("got response for get_color_name request");
   if(data) {
@@ -120,7 +125,8 @@ $.get(url,function(data, status) {
       }
   }
 })
-var url = "http://127.0.0.1:5000/get_engineFuel_name"; 
+//var url = "http://127.0.0.1:5000/get_engineFuel_name"; 
+var url = "/api/get_engineFuel_name";
 $.get(url,function(data, status) {
   console.log("got response for get_engineFuel_name request");
   if(data) {
@@ -133,7 +139,8 @@ $.get(url,function(data, status) {
       }
   }
 })
-var url = "http://127.0.0.1:5000/get_engineType_name"; 
+//var url = "http://127.0.0.1:5000/get_engineType_name"; 
+var url = "/api/get_engineType_name";
 $.get(url,function(data, status) {
   console.log("got response for get_engineType_name request");
   if(data) {
@@ -146,7 +153,8 @@ $.get(url,function(data, status) {
       }
   }
 })
-var url = "http://127.0.0.1:5000/get_body_name"; 
+//var url = "http://127.0.0.1:5000/get_body_name"; 
+var url = "/api/get_body_name";
 $.get(url,function(data, status) {
   console.log("got response for get_body_name request");
   if(data) {
@@ -159,7 +167,8 @@ $.get(url,function(data, status) {
       }
   }
 })
-var url = "http://127.0.0.1:5000/get_state_name"; 
+//var url = "http://127.0.0.1:5000/get_state_name"; 
+var url = "/api/get_state_name";
 $.get(url,function(data, status) {
   console.log("got response for get_state_name request");
   if(data) {
@@ -172,7 +181,8 @@ $.get(url,function(data, status) {
       }
   }
 })
-var url = "http://127.0.0.1:5000/get_drivetrain_name"; 
+//var url = "http://127.0.0.1:5000/get_drivetrain_name"; 
+var url = "/api/get_drivetrain_name";
 $.get(url,function(data, status) {
   console.log("got response for get_drivetrain_name request");
   if(data) {

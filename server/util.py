@@ -134,7 +134,6 @@ def load_saved_artifacts():
     print("loading saved artifacts .. done")
 
 def get_manufacturer_name():
-    load_saved_artifacts()
     manufacturers = []
     for i in range(len(__manufacturers)):
         manufacturers.append(__manufacturers[i].replace('manufacturer_name_', ''))
@@ -142,7 +141,6 @@ def get_manufacturer_name():
 
 
 def get_models_name():
-    load_saved_artifacts()
     models = []
     for i in range(len(__models)):
         models.append(__models[i].replace('model_name_', ''))
@@ -150,7 +148,6 @@ def get_models_name():
 
 
 def get_transmission_name():
-    load_saved_artifacts()
     transmission = []
     for i in range(len(__transmission)):
         transmission.append(__transmission[i].replace('transmission_', ''))
@@ -158,7 +155,6 @@ def get_transmission_name():
 
 
 def get_color_name():
-    load_saved_artifacts()
     color = []
     for i in range(len(__color)):
         color.append(__color[i].replace('color_', ''))
@@ -166,7 +162,6 @@ def get_color_name():
 
 
 def get_engineFuel_name():
-    load_saved_artifacts()
     engineFuel = []
     engineFuel1 = []
     for i in range(len(__engine_fuel)):
@@ -177,7 +172,6 @@ def get_engineFuel_name():
 
 
 def get_engineType_name():
-    load_saved_artifacts()
     engineType = []
     for i in range(len(__engine_type)):
         engineType.append(__engine_type[i].replace('engine_type_', ''))
@@ -185,7 +179,6 @@ def get_engineType_name():
 
 
 def get_body_name():
-    load_saved_artifacts()
     body = []
     for i in range(len(__body)):
         body.append(__body[i].replace('body_type_', ''))
@@ -193,7 +186,6 @@ def get_body_name():
 
 
 def get_state_name():
-    load_saved_artifacts()
     state = []
     for i in range(len(__state)):
         state.append(__state[i].replace('state_', ''))
@@ -201,7 +193,6 @@ def get_state_name():
 
 
 def get_drivetrain_name():
-    load_saved_artifacts()
     drivetrain = []
     for i in range(len(__drivetrain)):
         drivetrain.append(__drivetrain[i].replace('drivetrain_', ''))
